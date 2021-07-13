@@ -1,11 +1,19 @@
-import { TopContainer, LeftContainer, BottomContainer } from "./containers";
+import {
+  TopContainer,
+  MainContainer,
+  LeftContainer,
+  BottomContainer,
+} from "./containers";
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <TopContainer />
       <LeftContainer />
+      <div className="App__container">
+        <TopContainer />
+        <MainContainer />
+      </div>
       <BottomContainer />
     </div>
   );
