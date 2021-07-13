@@ -1,6 +1,6 @@
 .topContainer {
-  width: 70em;
-  height: 12vh;
+  width: 71.1em;
+  height: 10vh;
   padding: 0 2rem;
   // position: absolute;
   // top: 0;
@@ -29,7 +29,6 @@
 
     & > img {
       width: 3rem;
-      // margin-right: 0.5rem;
       margin: 0.5rem;
       border-radius: 50%;
     }
@@ -42,16 +41,17 @@
 }
 
 .mainContainer {
-  width: 70em;
-  height: 90vh;
+  width: 71.1em;
+  height: 78vh;
+  padding: 0 2rem;
   overflow: hidden;
   overflow-y: scroll;
   background-color: var(--grey-darker);
 }
 
 .leftContainer {
-  width: 30em;
-  height: 100vh;
+  width: 28em;
+  height: 88vh;
   // position: absolute;
   // left: 0;
   background-color: var(--grey-darkest);
@@ -59,7 +59,7 @@
 
 .bottomContainer {
   width: 100%;
-  height: 9rem;
+  height: 12vh;
   position: absolute;
   bottom: 0;
   z-index: 5;

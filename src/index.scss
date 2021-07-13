@@ -12,7 +12,8 @@
   --grey-darker: #121212;
   --grey-darkest: #030303;
 
-  --shadow: 0 20px 61px 0 rgba(65, 62, 101, 0.14);
+  --shadow: 2rem 2rem 10rem rgba(0, 0, 0, 0.5),
+    -2rem -2rem 10rem rgba(0, 0, 0, 0.5);
 }
 
 * {
