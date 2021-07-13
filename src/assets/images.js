@@ -5,6 +5,7 @@ const images = {
   next: { src: `${path}/next.png`, alt: "go-forward" },
   spotify: { src: `${path}/spotify.png`, alt: "spotify-logo" },
   user: { src: `${path}/user.jpg`, alt: "user-pic" },
+  play: { src: `${path}/play.png`, alt: "play-button" },
 };
 
 export default images;

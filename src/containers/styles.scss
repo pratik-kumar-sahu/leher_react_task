@@ -1,5 +1,5 @@
 .topContainer {
-  width: 71.1em;
+  width: 70em;
   height: 10vh;
   padding: 0 2rem;
   // position: absolute;
@@ -41,7 +41,7 @@
 }
 
 .mainContainer {
-  width: 71.1em;
+  width: 70em;
   height: 78vh;
   padding: 0 2rem;
   overflow: hidden;
@@ -50,11 +50,59 @@
 }
 
 .leftContainer {
-  width: 28em;
+  width: 30em;
   height: 88vh;
   // position: absolute;
   // left: 0;
+  display: flex;
+  flex-direction: column;
   background-color: var(--grey-darkest);
+
+  &__logo {
+    width: 100%;
+    margin: 2rem 1rem;
+    display: flex;
+    align-items: center;
+
+    & > img {
+      width: 5rem;
+      margin: 0 1rem;
+    }
+
+    & > p {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+  }
+
+  &__heading {
+    width: 80%;
+    margin-top: 0.5rem;
+    align-self: center;
+  }
+
+  &__playlist {
+    width: 80%;
+    height: 30rem;
+    align-self: center;
+    margin: 0.5rem 0 0 0;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-top: 1px solid var(--grey-dark);
+    // background-color: white;
+
+    & > p {
+      margin: 0.6rem 0;
+      font-weight: 600;
+      cursor: default;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
 }
 
 .bottomContainer {

@@ -17,8 +17,14 @@
       }
     }
 
-    &-content {
+    & > h5 {
       align-self: flex-end;
+      cursor: pointer;
+      border-bottom: 1px solid var(--grey-darker);
+
+      &:hover {
+        border-bottom: 1px solid var(--grey-light);
+      }
     }
   }
 
@@ -40,12 +46,17 @@
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   background-color: #161616;
+  position: relative;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: var(--grey-dark);
+
+    .card__playBtn {
+      display: block;
+    }
   }
 
   &__image {
@@ -53,6 +64,14 @@
     margin-bottom: 1rem;
     border-radius: 0.2rem;
     box-shadow: var(--shadow);
+  }
+
+  &__playBtn {
+    width: 4rem;
+    position: absolute;
+    bottom: 10rem;
+    right: 2rem;
+    display: none;
   }
 
   &__content {
@@ -71,5 +90,20 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.menu {
+  margin: 0 0.7rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  // background-color: var(--grey-dark);
+
+  & > img {
+    width: 3rem;
+    margin: 0 1.5rem 0 1rem;
   }
 }

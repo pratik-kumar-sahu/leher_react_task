@@ -12,8 +12,8 @@
   --grey-darker: #121212;
   --grey-darkest: #030303;
 
-  --shadow: 2rem 2rem 10rem rgba(0, 0, 0, 0.5),
-    -2rem -2rem 10rem rgba(0, 0, 0, 0.5);
+  --shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.2),
+    -2rem -2rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -30,4 +30,10 @@ html {
 
 body {
   font-size: 1.6rem;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  background: transparent;
 }

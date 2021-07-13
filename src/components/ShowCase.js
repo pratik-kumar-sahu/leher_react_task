@@ -10,16 +10,12 @@ function ShowCase() {
           <h2>Made for you</h2>
           <p>Get better recommendations the more you listen</p>
         </div>
-        <div className="showcase__header-content">
-          <h5>SEE ALL</h5>
-        </div>
+        <h5>SEE ALL</h5>
       </div>
       <div className="showcase__items">
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
-        <MusicCard />
+        {[1, 2, 3, 4, 5].map((i) => (
+          <MusicCard key={i} />
+        ))}
       </div>
     </div>
   );
