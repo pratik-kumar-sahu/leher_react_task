@@ -6,3 +6,4 @@
 - Hooks
 - CSS/Sass
 - Axios
+- TMDB Api for images and dummy content
