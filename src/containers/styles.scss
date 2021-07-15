@@ -144,10 +144,99 @@
 
 .bottomContainer {
   width: 100%;
-  height: 12vh;
+  height: 13vh;
+  padding: 1.5rem;
   position: absolute;
   bottom: 0;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid var(--grey-darkest);
   background-color: #282828;
+
+  &__currentMusic {
+    width: 23rem;
+    display: flex;
+    align-items: center;
+
+    & > img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    &-info {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__controls {
+    height: 6rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: salmon;
+
+    &-icons {
+      display: flex;
+      align-items: center;
+
+      & > img {
+        cursor: pointer;
+      }
+
+      &--big {
+        width: 3.5rem;
+        margin: 0 2rem;
+      }
+
+      &--small {
+        width: 1.8rem;
+      }
+    }
+
+    &-progress {
+      display: flex;
+      align-items: center;
+
+      &--bar {
+        width: 50rem;
+        height: 0.5rem;
+        margin: 0 1rem;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+        background-color: var(--grey-light);
+
+        &::before {
+          content: "";
+          width: 30%;
+          height: 5px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 1rem;
+          background-color: #1db954;
+        }
+      }
+
+      & > p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__empty {
+    width: 20rem;
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bottomContainer {
+    height: 18vh;
+    flex-direction: column;
+  }
 }
